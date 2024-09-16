@@ -26,13 +26,17 @@ function Nav() {
             {/* profile  */}
             <div className='flex flex-wrap'>
 
-              <input type="text" class="border border-gray-300 rounded-md p-2  mx-2 px-2 " placeholder="Enter text" />
+              <input type="text" class="border-none border-gray-300 rounded-md p-2  mx-2 px-2" placeholder="" />
 
               <div className="w-10 h-10" ><img src={profile} alt="profile image" className='w-full h-full object-contain rounded-2xl' /></div>
 
               <label htmlFor="" className='font-roboto mx-2'>Name</label>
 
+              <div className="w-3 h-3"><i class="fa-solid fa-bell color-red"></i></div>
+
             </div>
+
+
 
 
 
@@ -46,10 +50,8 @@ function Nav() {
 
 
 
+
         </div>
-
-
-
       </div>
 
 
