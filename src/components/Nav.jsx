@@ -1,17 +1,46 @@
 import React from 'react'
-import logo from 'assets/logo.png'
+import logo from '../assets/img/logo.png'
+import profile from '../assets/img/profile.jpg'
+
 
 function Nav() {
   return (
     <>
 
-    <div className="w-full h-auto m-1">
-      <div className="max-w-[1200px] h-auto m-auto" >
+      <div className="w-full h-auto m-2 p-2">
+        <div className="max-w-[1200px] h-auto m-auto" >
 
-        <div className="w-full h-auto">
+          <div className="w-full h-auto flex  flex-wrap justify-between">
 
-          <div className="w-5 h-5">
-            <img src="logo.pn" alt=""  className='w-full h-full  object-contain'/>
+
+            {/* logo  */}
+
+            <div className="w-6 h-6">
+              <img src={logo} alt="logo image" className='w-full h-full  object-contain' />
+
+            </div>
+
+
+
+
+            {/* profile  */}
+            <div className='flex flex-wrap'>
+
+              <input type="text" class="border border-gray-300 rounded-md p-2  mx-2 px-2 " placeholder="Enter text" />
+
+              <div className="w-10 h-10" ><img src={profile} alt="profile image" className='w-full h-full object-contain rounded-2xl' /></div>
+
+              <label htmlFor="" className='font-roboto mx-2'>Name</label>
+
+            </div>
+
+
+
+
+
+
+
+
           </div>
 
 
@@ -19,21 +48,16 @@ function Nav() {
 
         </div>
 
-        
 
 
       </div>
 
 
 
-    </div>
-
-
-
 
 
     </>
-   
+
   )
 }
 
