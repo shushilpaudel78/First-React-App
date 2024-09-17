@@ -9,6 +9,9 @@ export default {
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
       },
+      colors: {
+        customPurple: '#b668b6',
+      },
     },
   },
   plugins: [],

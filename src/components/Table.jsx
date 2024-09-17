@@ -4,8 +4,8 @@ import Button from './Button'
 export default function Table() {
     return (
         <div>
-            <table className='w-full text-center bg-white py-4'>
-                <tr>
+            <table className='w-full text-center bg-white py-4 font-poppins text-sm'>
+                <tr className=''>
                     <th>Date </th>
                     <th>Transition ID </th>
                     <th>Type</th>

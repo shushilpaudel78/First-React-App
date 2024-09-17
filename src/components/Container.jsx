@@ -8,7 +8,7 @@ export default function Container() {
 
     <>
 
-      <div className="w-full h-auto  bg-[#F7F7F7]  py-0">
+      <div className="w-full h-auto  bg-[#F7F7F7]  py-10 ">
 
         <div className='max-w-[1200px] m-auto'>
 
@@ -25,17 +25,17 @@ export default function Container() {
 
 
 
-            <div className="w-[80%] h-auto px-3 bg-[#fff9fe]">
+            <div className="w-[80%] h-auto px-3 bg-[#fff9fe] rounded-lg">
 
-              <div className="flex my-2 py-2 justify-between">
-                <h3 className='font-poppins '>Agent Management Transaction</h3>
+              <div className="flex my-2 py-4 justify-between">
+                <h3 className='font-poppins mt-3 '>Agent Management Transaction</h3>
 
 
-                <p>Account || Shushil Paudel</p>
+                <p className='font-poppins py-3 text-sm'>Account || Shushil Paudel</p>
 
               </div>
 
-              <h1 className='font-poppins my-2 py-2 w-full'>Transaction</h1>
+              <h1 className='font-poppins my-2 py-2 w-full text-lg'>Transaction</h1>
 
               <Table />
 
@@ -55,12 +55,6 @@ export default function Container() {
 
 
       </div>
-
-
-
-
-
-
 
 
 

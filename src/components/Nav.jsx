@@ -17,7 +17,7 @@ function Nav() {
 
 
             {/* logo  */}
-            <div className="flex">
+            <div className="flex my-4">
             <div className="w-6 h-6"><img src={logo} alt="logo image" className='w-full h-full  object-contain' /> </div>
             <label htmlFor="" className='font-poppins px-2 text-[#4337cf]'>Margin Top</label>
 
@@ -31,23 +31,24 @@ function Nav() {
             <div className='flex flex-wrap  gap-x-4'>
 
 
-              <div className="relative w-[500px] h-[40px]">
-                <input type="text"  placeholder='search e. g card' className='w-full h-full rounded-lg pl-[30px] border-2 border-[#df67a2]-500'/>
-              <FaSearch className="absolute top-4 left-3" />
+              <div className="relative w-[500px] h-[50px]">
+                
+                <input type="text"  placeholder='search e. g card' className='w-full h-full rounded-full pl-[50px] border-2 border-customPurple'/>
+              <FaSearch className="absolute top-5 left-6 text-customPurple" />
               </div>
 
              
 
-              <div className="flex mx-4">
+              <div className="flex mx-6 my-1">
 
-                <div className="w-8 h-8" ><img src={profile} alt="profile image" className='w-full h-full object-contain rounded-2xl' /></div>
-                <label htmlFor="" className='font-poppins mx-2 font-medium not-italic mx-2 border-black'>Shushil Paudel</label>
+                <div className="w-8 h-8" ><img src={profile} alt="profile image" className='w-full h-full object-contain rounded-full text-sm' /></div>
+                <label htmlFor="" className='font-poppins  font-medium not-italic  border-black py-1 px-3 text-sm'>Shushil Paudel</label>
 
               </div>
 
 
 
-              <div className="w-6 h-6 text-base my-1.5"> <FaBell /> </div>
+              <div className="w-6 h-6 text-base my-1.5 text-customPurple text-lg mb-2"> <FaBell /> </div>
 
             </div>
 

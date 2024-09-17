@@ -13,9 +13,9 @@ export default function sidebar() {
   return (
     <Router>
 
-    <div className='w-full h-[100%] -8 bg-[#F7F7F7]  '>
+    <div className='w-full h-[100%]  bg-[#F7F7F7 ]  py-4 '>
 
-      <ul className='flex flex-wrap  flex-col gap-5 font-poppins text-sm '>
+      <ul className='flex flex-wrap  flex-col gap-5 font-poppins text-sm text-customPurple '>
         <li> <Link to="/overview" className='flex gap-4'> <FiEye />  Overview </Link></li>
         <li> <Link to="/user"className='flex gap-4' > <FaUserAlt /> User</Link></li>
         <li> <Link to="/newuser" className='flex gap-4'> <LuMessagesSquare /> New User</Link></li>

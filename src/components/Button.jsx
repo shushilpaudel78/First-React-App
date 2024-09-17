@@ -4,7 +4,7 @@ export default function Button(props) {
   return (
     <div>
 
-        <button className='bg-blue-200 rounded px-4 py-2 font-poppins'>{props.name}</button>
+        <button className='rounded px-4 py-2 font-poppins {props.color} text-white'>{props.name}</button>
       
     </div>
   )
