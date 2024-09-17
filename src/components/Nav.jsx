@@ -17,11 +17,13 @@ function Nav() {
 
 
             {/* logo  */}
+            <div className="flex">
+            <div className="w-6 h-6"><img src={logo} alt="logo image" className='w-full h-full  object-contain' /> </div>
+            <label htmlFor="" className='font-poppins px-2 text-[#4337cf]'>Margin Top</label>
 
-            <div className="w-6 h-6">
-              <img src={logo} alt="logo image" className='w-full h-full  object-contain' />
 
             </div>
+
 
 
 
@@ -29,9 +31,9 @@ function Nav() {
             <div className='flex flex-wrap  gap-x-4'>
 
 
-              <div className="relative  w-[200px] h-">
-                <input type="w-full h-full"  placeholder='search e. g card' />
-              <FaSearch className="absolute top-1 left-1" />
+              <div className="relative w-[500px] h-[40px]">
+                <input type="text"  placeholder='search e. g card' className='w-full h-full rounded-lg pl-[30px] border-2 border-[#df67a2]-500'/>
+              <FaSearch className="absolute top-4 left-3" />
               </div>
 
              
@@ -39,13 +41,13 @@ function Nav() {
               <div className="flex mx-4">
 
                 <div className="w-8 h-8" ><img src={profile} alt="profile image" className='w-full h-full object-contain rounded-2xl' /></div>
-                <label htmlFor="" className='font-poppins mx-2 font-medium not-italic mx-2'>Shushil Paudel</label>
+                <label htmlFor="" className='font-poppins mx-2 font-medium not-italic mx-2 border-black'>Shushil Paudel</label>
 
               </div>
 
 
 
-              <div className="w-4 h-4 text-base my-1.5"> <FaBell /> </div>
+              <div className="w-6 h-6 text-base my-1.5"> <FaBell /> </div>
 
             </div>
 

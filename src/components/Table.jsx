@@ -1,9 +1,10 @@
 import React from 'react'
+import Button from './Button'
 
 export default function Table() {
     return (
         <div>
-            <table className='w-full text-center bg-white'>
+            <table className='w-full text-center bg-white py-4'>
                 <tr>
                     <th>Date </th>
                     <th>Transition ID </th>
@@ -17,14 +18,51 @@ export default function Table() {
                 </tr>
 
                 <tr>
-                    <td>Date </td>
-                    <td>Transition Id</td>
+                    <td>14/01/2019</td>
+                    <td>12345678</td>
                     <td>Type</td>
-                    <td> Name</td>
-                    <td>Value</td>
-                    <td>Return</td>
-                    <td>Status</td>
-                    <td>Action</td>
+                    <td>Amazon</td>
+                    <td>$355</td>
+                    <td>#18000</td>
+                    <td>Abc</td>
+                    <td><Button name="shushil" /></td>
+
+                </tr>
+
+
+                <tr>
+                    <td>14/01/2019</td>
+                    <td>12345678</td>
+                    <td>Type</td>
+                    <td>Amazon</td>
+                    <td>$355</td>
+                    <td>#18000</td>
+                    <td>Abc</td>
+                    <td><Button name="shushil" /></td>
+
+                </tr>
+
+                <tr>
+                    <td>14/01/2019</td>
+                    <td>12345678</td>
+                    <td>Type</td>
+                    <td>Amazon</td>
+                    <td>$355</td>
+                    <td>#18000</td>
+                    <td>Abc</td>
+                    <td><Button name="shushil" /></td>
+
+                </tr>
+
+                <tr>
+                    <td>14/01/2019</td>
+                    <td>12345678</td>
+                    <td>Type</td>
+                    <td>Amazon</td>
+                    <td>$355</td>
+                    <td>#18000</td>
+                    <td>Abc</td>
+                    <td><Button name="shushil" /></td>
 
                 </tr>
 
