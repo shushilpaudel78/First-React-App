@@ -32,7 +32,7 @@ function Nav() {
 
 
               <div className="relative w-[500px] h-[50px]">
-                
+
                 <input type="text"  placeholder='search e. g card' className='w-full h-full rounded-full pl-[50px] border-2 border-customPurple'/>
               <FaSearch className="absolute top-5 left-6 text-customPurple" />
               </div>
@@ -48,7 +48,7 @@ function Nav() {
 
 
 
-              <div className="w-6 h-6 text-base my-1.5 text-customPurple text-lg mb-2"> <FaBell /> </div>
+              <div className="w-6 h-6 text-base my-1.5 text-customPurple text-lg mb-2 cursor-pointer"> <FaBell / > </div>
 
             </div>
 
