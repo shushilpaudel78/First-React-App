@@ -3,7 +3,7 @@ import React from 'react'
 export default function Table() {
     return (
         <div>
-            <table className='w-full'>
+            <table className='w-full text-center bg-white'>
                 <tr>
                     <th>Date </th>
                     <th>Transition ID </th>

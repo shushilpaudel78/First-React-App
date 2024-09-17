@@ -8,7 +8,7 @@ export default function Container() {
     
     <>
 
-    <div className="w-full h-auto">
+    <div className="w-full h-auto  bg-[#F7F7F7] py-5">
 
       <div className='max-w-[1200px] m-auto'>
 
@@ -27,6 +27,7 @@ export default function Container() {
           <div className="w-[80%] h-auto">
 
           <Table />
+
 
 
           </div>

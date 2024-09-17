@@ -25,13 +25,12 @@ function Nav() {
 
 
 
-
             {/* profile  */}
             <div className='flex flex-wrap  gap-x-4'>
 
 
-              <div className="relative ">
-                <input type="text border-red pl-1 pr-2 w-[260px] h-[60px]"  />
+              <div className="relative  w-[200px] h-">
+                <input type="w-full h-full"  placeholder='search e. g card' />
               <FaSearch className="absolute top-1 left-1" />
               </div>
 
@@ -40,7 +39,7 @@ function Nav() {
               <div className="flex mx-4">
 
                 <div className="w-8 h-8" ><img src={profile} alt="profile image" className='w-full h-full object-contain rounded-2xl' /></div>
-                <label htmlFor="" className='font-poppins mx-2 font-medium not-italic mx-2'>Name</label>
+                <label htmlFor="" className='font-poppins mx-2 font-medium not-italic mx-2'>Shushil Paudel</label>
 
               </div>
 
