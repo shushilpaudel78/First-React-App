@@ -1,13 +1,16 @@
 import React from 'react'
 import logo from '../assets/img/logo.png'
 import profile from '../assets/img/profile.jpg'
+import { FaBell } from "react-icons/fa";
+import { FaSearch } from "react-icons/fa";
+
 
 
 function Nav() {
   return (
     <>
 
-      <div className="w-full h-auto m-2 p-2">
+      <div className="w-full h-auto  py-3 bg-[#F7F7F7]">
         <div className="max-w-[1200px] h-auto m-auto" >
 
           <div className="w-full h-auto flex  flex-wrap justify-between">
@@ -24,31 +27,32 @@ function Nav() {
 
 
             {/* profile  */}
-            <div className='flex flex-wrap'>
+            <div className='flex flex-wrap  gap-x-4'>
 
-              <input type="text" class="border-none border-gray-300 rounded-md p-2  mx-2 px-2" placeholder="" />
 
-              <div className="w-10 h-10" ><img src={profile} alt="profile image" className='w-full h-full object-contain rounded-2xl' /></div>
+              <div className="relative ">
+                <input type="text border-red pl-1 pr-2 w-[260px] h-[60px]"  />
+              <FaSearch className="absolute top-1 left-1" />
+              </div>
 
-              <label htmlFor="" className='font-roboto mx-2'>Name</label>
+             
 
-              <div className="w-3 h-3"><i class="fa-solid fa-bell color-red"></i></div>
+              <div className="flex mx-4">
+
+                <div className="w-8 h-8" ><img src={profile} alt="profile image" className='w-full h-full object-contain rounded-2xl' /></div>
+                <label htmlFor="" className='font-poppins mx-2 font-medium not-italic mx-2'>Name</label>
+
+              </div>
+
+
+
+              <div className="w-4 h-4 text-base my-1.5"> <FaBell /> </div>
 
             </div>
 
 
 
-
-
-
-
-
-
-
           </div>
-
-
-
 
 
         </div>
