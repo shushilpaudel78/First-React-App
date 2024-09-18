@@ -2,16 +2,14 @@ import React from 'react'
 import Button from './Button'
 import Bitcoin from '../assets/img/bitcoin.png'
 import Group from '../assets/img/Group.png'
-
-
-import { height, width } from '@fortawesome/free-solid-svg-icons/fa0'
+import { SlOptions } from "react-icons/sl";
 
 export default function Table() {
 
     const costumeStyle = {
         height: '50px',
         // background: 'red',
-        border: '2px solid black'
+        // border: '2px solid black'
 
     }
     return (
@@ -21,7 +19,7 @@ export default function Table() {
                     <th >Date </th>
                     <th>Transition ID </th>
                     <th>Type</th>
-                    <th> Name</th>
+                    <th>Name</th>
                     <th>Value</th>
                     <th>Return</th>
                     <th>Status</th>
@@ -42,8 +40,48 @@ export default function Table() {
                     <td>Amazon</td>
                     <td>$355</td>
                     <td>#18000</td>
-                    <td>Abc</td>
-                    <td><Button name="shushil" /></td>
+                    <td><Button name="Abc" /></td>
+                    <td className='flex gap-4 justify-center my-2'><Button name="shushil" /> <SlOptions  className="float-right"/> </td>
+
+                </tr>
+
+
+                <tr style={costumeStyle}>
+                    <td>14/01/2019</td>
+                    <td>12345678</td>
+                    <td>
+                        <div className="w-[20px] h-[20px] flex">
+
+                            <img src={Group} alt="group img" className='w-full h-full' />
+
+                        </div>
+
+                    </td>
+                    <td>Amazon</td>
+                    <td>$355</td>
+                    <td>#18000</td>
+                    <td><Button name="Abc" /></td>
+                    <td className='flex gap-4 justify-center my-2' ><Button name="shushil" /> <SlOptions className="float-right" /></td>
+
+                </tr>
+
+
+                
+                <tr style={costumeStyle}>
+                    <td>14/01/2019</td>
+                    <td>12345678</td>
+                    <td>
+
+                        <div className="w-[20px] h-[20px] flex">
+                            <img src={Bitcoin} alt="bitcoin img" className='w-full h-full' />
+                        </div>
+
+                    </td>
+                    <td>Amazon</td>
+                    <td>$355</td>
+                    <td>#18000</td>
+                    <td><Button name="Abc" /></td>
+                    <td className='flex gap-4 justify-center my-2'><Button name="shushil" /> <SlOptions className="float-right" /></td>
 
                 </tr>
 
@@ -60,32 +98,8 @@ export default function Table() {
                     <td>Amazon</td>
                     <td>$355</td>
                     <td>#18000</td>
-                    <td>Abc</td>
-                    <td><Button name="shushil" /></td>
-
-                </tr>
-
-                <tr style={costumeStyle}>
-                    <td>14/01/2019</td>
-                    <td>12345678</td>
-                    <td>Type</td>
-                    <td>Amazon</td>
-                    <td>$355</td>
-                    <td>#18000</td>
-                    <td>Abc</td>
-                    <td><Button name="shushil" /></td>
-
-                </tr>
-
-                <tr style={costumeStyle}>
-                    <td>14/01/2019</td>
-                    <td>12345678</td>
-                    <td>Type</td>
-                    <td>Amazon</td>
-                    <td>$355</td>
-                    <td>#18000</td>
-                    <td>Abc</td>
-                    <td><Button name="shushil" /></td>
+                    <td><Button name="Abc" /></td>
+                    <td className='flex gap-4 justify-center my-2' ><Button name="shushil" /> <SlOptions className="float-right" /></td>
 
                 </tr>
 
@@ -93,25 +107,41 @@ export default function Table() {
                 <tr style={costumeStyle}>
                     <td>14/01/2019</td>
                     <td>12345678</td>
-                    <td>Type</td>
+                    <td>
+
+                        <div className="w-[20px] h-[20px] flex">
+                            <img src={Bitcoin} alt="bitcoin img" className='w-full h-full' />
+                        </div>
+
+                    </td>
                     <td>Amazon</td>
                     <td>$355</td>
                     <td>#18000</td>
-                    <td>Abc</td>
-                    <td><Button name="Delete" /></td>
+                    <td><Button name="Abc" /></td>
+                    <td className='flex gap-4 justify-center my-2'> <Button name="shushil" /> <SlOptions className="float-right" /> </td>
 
                 </tr>
+
+
                 <tr style={costumeStyle}>
                     <td>14/01/2019</td>
                     <td>12345678</td>
-                    <td>Type</td>
+                    <td>
+                        <div className="w-[20px] h-[20px] flex">
+                            <img src={Group} alt="group img" className='w-full h-full' />
+                        </div>
+
+                    </td>
                     <td>Amazon</td>
                     <td>$355</td>
                     <td>#18000</td>
-                    <td>Abc</td>
-                    <td><Button name="shushil" /></td>
+                    <td><Button name="Abc" /></td>
+                    <td className='flex gap-4 justify-center my-2'><Button name="shushil" /> <SlOptions className="float-right" /></td>
 
                 </tr>
+
+
+             
 
 
             </table>
