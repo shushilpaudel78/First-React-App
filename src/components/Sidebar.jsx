@@ -27,18 +27,10 @@ export default function sidebar() {
         <li> <Link to="/transition" className='flex gap-4' > <AiOutlineTransaction /> Transition</Link></li>
         <li> <Link to="/statistics" className='flex gap-4'> <IoStatsChartSharp />Statistics</Link></li>
         <li> <Link to="/setting" className='flex gap-4'> <IoSettingsOutline />Setting</Link></li>
-
-
-
-
-
       </ul>
 
       
 
-
-    
-      
     </div>
 
     </Router>
