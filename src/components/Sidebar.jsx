@@ -7,6 +7,8 @@ import { AiOutlineTransaction } from "react-icons/ai";
 import { IoStatsChartSharp } from "react-icons/io5";
 import { IoSettingsOutline } from "react-icons/io5";
 
+import Container from './Container'
+
 import React from 'react'
 
 export default function sidebar() {
@@ -15,8 +17,10 @@ export default function sidebar() {
 
     <div className='w-full h-[100%]  bg-[#F7F7F7 ]  py-4 '>
 
+      
+
       <ul className='flex flex-wrap  flex-col gap-5 font-poppins text-sm text-customPurple '>
-        <li> <Link to="/overview" className='flex gap-4'> <FiEye />  Overview </Link></li>
+        <li> <Link to="/" className='flex gap-4'> <FiEye />  Overview </Link></li>
         <li> <Link to="/user"className='flex gap-4' > <FaUserAlt /> User</Link></li>
         <li> <Link to="/newuser" className='flex gap-4'> <LuMessagesSquare /> New User</Link></li>
         <li> <Link to="/messages" className='flex gap-4' > <BiMessageDetail /> Messages</Link></li>
@@ -26,12 +30,11 @@ export default function sidebar() {
 
 
 
+
+
       </ul>
 
-      {/* <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-      </Routes> */}
+      
 
 
     
