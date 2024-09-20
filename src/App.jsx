@@ -14,11 +14,8 @@ export default function App() {
     <>
 
     <BrowserRouter>
-
     <Routes>
-
-
-      <Route  path="/" element={<Home />}/>
+      <Route  index element={<Home />}/>
       <Route  path="/message" element={<Messages />}/>
       <Route  path="/newuser" element={<Newuser />}/>
       <Route  path="/overview" element={<Overview />}/>
@@ -27,15 +24,12 @@ export default function App() {
       <Route  path="/transition" element={<Transition />}/>
       <Route  path="/user" element={<User />}/>
 
-      
-
-
-
-
-
-
     </Routes>
     </BrowserRouter>
+
+
+
+    
 
     </>
   )
