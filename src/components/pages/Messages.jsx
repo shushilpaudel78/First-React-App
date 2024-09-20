@@ -1,9 +1,13 @@
 import React from 'react'
 import Sidebar from '../Sidebar'
+import Nav from '../Nav'
 
 export default function Messages() {
   return (
     <>
+
+    <Nav />
+
 
 
     <div className="w-full h-auto  bg-[#F7F7F7]  py-10 ">
