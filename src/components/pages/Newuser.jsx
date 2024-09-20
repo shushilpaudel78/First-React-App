@@ -1,5 +1,5 @@
 import React from 'react'
-import Sidebar from './Sidebar'
+import Sidebar from '../Sidebar'
 
 export default function Newuser() {
     return (
@@ -22,7 +22,8 @@ export default function Newuser() {
 
 
                         <div className="w-[80%] h-auto px-3 bg-[#fff9fe] rounded-lg">
-                            <H1>From new user page</H1>
+                            
+                            <h1>From new user</h1>
 
             
                         </div>
