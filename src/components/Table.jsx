@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import Button from './Button'
-import Bitcoin from '../assets/img/bitcoin.png'
-import Group from '../assets/img/Group.png'
-import { SlOptions } from "react-icons/sl";
+// import Button from './Button'
+// import Bitcoin from '../assets/img/bitcoin.png'
+// import Group from '../assets/img/Group.png'
+// import { SlOptions } from "react-icons/sl";
 
 export default function Table() {
 
@@ -15,38 +15,52 @@ export default function Table() {
 
     const users = [
         {
-            date:"34/45/65",
-            transid:"3232332",
-            type:"abc",
-            name:"value",
-            return:"return",
-            status:"active",
-            action:"active"
+            date: "34/45/65",
+            transid: 1,
+            type: "abc",
+            name: "value",
+            return: "return",
+            status: "active",
+            action: "active",
+            value:877899,
 
         },
         {
-            date:"34/45/65",
-            transid:"3232332",
-            type:"abc",
-            name:"value",
-            return:"return",
-            status:"active",
-            action:"active"
+            date: "34/45/65",
+            transid: 2,
+            type: "abc",
+            name: "value",
+            return: "return",
+            status: "active",
+            action: "active",
+            value:454
 
         },
         {
-            date:"34/45/65",
-            transid:"3232332",
-            type:"abc",
-            name:"value",
-            return:"return",
-            status:"active",
-            action:"active"
+            date: "34/45/65",
+            transid: 3,
+            type: "abc",
+            name: "value",
+            return: "return",
+            status: "active",
+            action: "active",
+            value:7874858
+        },
 
+        {
+            date: "34/45/65",
+            transid: 3,
+            value:54464,
+            type: "abc",
+            name: "value",
+            return: "return",
+            status: "active",
+            action: "active"
         }
+
     ]
 
- 
+
 
 
     return (
@@ -64,10 +78,9 @@ export default function Table() {
 
                 </tr>
 
-            {
-                users.map((user) => {
+                {users.map((user) => (
 
-                    <tr style={costumeStyle}>
+                    <tr key={user.transid} style={costumeStyle}>
 
                         <td>{user.date}</td>
                         <td>{user.transid}</td>
@@ -77,116 +90,10 @@ export default function Table() {
                         <td>{user.return}</td>
                         <td>{user.status}</td>
                         <td>{user.action}</td>
-                </tr>
+                    </tr>
 
-                })
-            }
+                ))}
 
-              
-
-
-
-
-
-
-
-{/* 
-                <tr style={costumeStyle}>
-                    <td>14/01/2019</td>
-                    <td>12345678</td>
-                    <td>
-                        <div className="w-[20px] h-[20px] flex">
-
-                            <img src={Group} alt="group img" className='w-full h-full' />
-
-                        </div>
-
-                    </td>
-                    <td>Amazon</td>
-                    <td>$355</td>
-                    <td>#18000</td>
-                    <td><Button name="Abc" /></td>
-                    <td className='flex gap-4 justify-center my-2' ><Button name="shushil" /> <SlOptions className="float-right" /></td>
-
-                </tr>
-
-
-                
-                <tr style={costumeStyle}>
-                    <td>14/01/2019</td>
-                    <td>12345678</td>
-                    <td>
-
-                        <div className="w-[20px] h-[20px] flex">
-                            <img src={Bitcoin} alt="bitcoin img" className='w-full h-full' />
-                        </div>
-
-                    </td>
-                    <td>Amazon</td>
-                    <td>$355</td>
-                    <td>#18000</td>
-                    <td><Button name="Abc" /></td>
-                    <td className='flex gap-4 justify-center my-2'><Button name="shushil" /> <SlOptions className="float-right" /></td>
-
-                </tr>
-
-
-                <tr style={costumeStyle}>
-                    <td>14/01/2019</td>
-                    <td>12345678</td>
-                    <td>
-                        <div className="w-[20px] h-[20px] flex">
-                            <img src={Group} alt="group img" className='w-full h-full' />
-                        </div>
-
-                    </td>
-                    <td>Amazon</td>
-                    <td>$355</td>
-                    <td>#18000</td>
-                    <td><Button name="Abc" /></td>
-                    <td className='flex gap-4 justify-center my-2' ><Button name="shushil" /> <SlOptions className="float-right" /></td>
-
-                </tr>
-
-
-                <tr style={costumeStyle}>
-                    <td>14/01/2019</td>
-                    <td>12345678</td>
-                    <td>
-
-                        <div className="w-[20px] h-[20px] flex">
-                            <img src={Bitcoin} alt="bitcoin img" className='w-full h-full' />
-                        </div>
-
-                    </td>
-                    <td>Amazon</td>
-                    <td>$355</td>
-                    <td>#18000</td>
-                    <td><Button name="Abc" /></td>
-                    <td className='flex gap-4 justify-center my-2'> <Button name="shushil" /> <SlOptions className="float-right" /> </td>
-
-                </tr>
-
-
-                <tr style={costumeStyle}>
-                    <td>14/01/2019</td>
-                    <td>12345678</td>
-                    <td>
-                        <div className="w-[20px] h-[20px] flex">
-                            <img src={Group} alt="group img" className='w-full h-full' />
-                        </div>
-
-                    </td>
-                    <td>Amazon</td>
-                    <td>$355</td>
-                    <td>#18000</td>
-                    <td><Button name="Abc" /></td>
-                    <td className='flex gap-4 justify-center my-2'><Button name="shushil" /> <SlOptions className="float-right" /></td>
-
-                </tr> */}
-
-
-             
 
 
             </table>
