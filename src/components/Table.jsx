@@ -13,19 +13,40 @@ export default function Table() {
 
     }
 
-    const [employees, setEmployes] = useState([
+    const users = [
         {
-            Date:"3/4/5",
-            transid:"abc",
-            type:"1.jpg",
-            value:"123",
-            return:"abc",
+            date:"34/45/65",
+            transid:"3232332",
+            type:"abc",
+            name:"value",
+            return:"return",
             status:"active",
-            Action :"abc"
+            action:"active"
 
+        },
+        {
+            date:"34/45/65",
+            transid:"3232332",
+            type:"abc",
+            name:"value",
+            return:"return",
+            status:"active",
+            action:"active"
+
+        },
+        {
+            date:"34/45/65",
+            transid:"3232332",
+            type:"abc",
+            name:"value",
+            return:"return",
+            status:"active",
+            action:"active"
 
         }
-    ])
+    ]
+
+ 
 
 
     return (
@@ -43,30 +64,25 @@ export default function Table() {
 
                 </tr>
 
-                <tr style={costumeStyle}>
+            {
+                users.map((user) => {
 
-                    {
-                        employees.map((employee) => {
-                            <td 
-                            date={employee.date}
-                            transid={employee.transid}
-                            type={employee.type}
-                            name={employee.name}
-                            value={employee.value}
-                            return={employee.return}
-                            status={employee.status}
-                            action={employee.action}
+                    <tr style={costumeStyle}>
 
-                            
-                            />
-
-                        })
-                    }
-
-
-                   
-
+                        <td>{user.date}</td>
+                        <td>{user.transid}</td>
+                        <td>{user.type}</td>
+                        <td>{user.name}</td>
+                        <td>{user.value}</td>
+                        <td>{user.return}</td>
+                        <td>{user.status}</td>
+                        <td>{user.action}</td>
                 </tr>
+
+                })
+            }
+
+              
 
 
 
