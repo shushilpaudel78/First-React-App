@@ -49,7 +49,7 @@ export default function Table() {
 
         {
             date: "34/45/65",
-            transid: 3,
+            transid: 4,
             value:54464,
             type: "abc",
             name: "value",
@@ -80,7 +80,7 @@ export default function Table() {
 
                 {users.map((user) => (
 
-                    <tr key={user.transid} style={costumeStyle}>
+                    <tr key={user.transid} style={costumeStyle} className='text-[14px] color-red text'>
 
                         <td>{user.date}</td>
                         <td>{user.transid}</td>
