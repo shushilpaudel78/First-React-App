@@ -22,7 +22,7 @@ export default function Table() {
             date: "34/45/65",
             transid: 1,
             type: "abc",
-            name: "value",
+            name: "shushil",
             return: "return",
             status: "active",
             action: "active",
@@ -33,7 +33,7 @@ export default function Table() {
             date: "34/45/65",
             transid: 2,
             type: "abc",
-            name: "value",
+            name: "ram",
             return: "return",
             status: "active",
             action: "active",
@@ -103,10 +103,10 @@ export default function Table() {
 
                 </tr>
 
-                {users.filter((user) => {
-                    return search.toLowerCase() ==='' ?
-                    user :
-                    user.name.toLowerCase().includes(search);
+                {users?.filter((user) => {
+                    return search?.toLowerCase() ==='' 
+                    ? user 
+                    : user.name.toLowerCase().includes(search);
                 }).map((user) => (
 
                     <tr key={user.id} style={costumeStyle} className='text-[14px] color-red text'>
