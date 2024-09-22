@@ -16,43 +16,19 @@ export default function Container() {
 
 
             <div className="w-[20%] h-auto">
-
               <Sidebar />
-
-
             </div>
 
 
-
-
             <div className="w-[80%] h-auto px-3 bg-[#fff9fe] rounded-lg">
-
-              <div className="flex my-2 py-4 justify-between">
-                <h3 className='font-poppins mt-3 '>Agent Management Transaction</h3>
-
-
-                <p className='font-poppins py-3 text-sm'>Account || Shushil Paudel</p>
-
-              </div>
-
-              <h1 className='font-poppins my-2 py-2 w-full text-lg'>Transaction</h1>
-
               <Table />
-
-
-
             </div>
 
 
           </div>
 
 
-
-
-
-
         </div>
-
 
       </div>
 

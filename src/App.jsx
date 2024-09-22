@@ -7,7 +7,6 @@ import Overview from './components/pages/overview'
 import Setting from './components/pages/Setting'
 import Statistics from './components/pages/Statistics'
 import Transition from './components/pages/Transition'
-import User from './components/pages/User'
 
 export default function App() {
   return (
@@ -22,7 +21,6 @@ export default function App() {
       <Route  path="/setting" element={<Setting />}/>
       <Route  path="statistics/" element={<Statistics />}/>
       <Route  path="/transition" element={<Transition />}/>
-      <Route  path="/user" element={<User />}/>
 
     </Routes>
     </BrowserRouter>

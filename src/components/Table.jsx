@@ -4,7 +4,11 @@ import React, { useState } from 'react'
 // import Group from '../assets/img/Group.png'
 // import { SlOptions } from "react-icons/sl";
 
+
 export default function Table() {
+
+    const [search, setSearch] = useState()
+    console.log(search)
 
     const costumeStyle = {
         height: '50px',
@@ -22,7 +26,7 @@ export default function Table() {
             return: "return",
             status: "active",
             action: "active",
-            value:877899,
+            value: 877899,
 
         },
         {
@@ -33,7 +37,7 @@ export default function Table() {
             return: "return",
             status: "active",
             action: "active",
-            value:454
+            value: 454
 
         },
         {
@@ -44,13 +48,13 @@ export default function Table() {
             return: "return",
             status: "active",
             action: "active",
-            value:7874858
+            value: 7874858
         },
 
         {
             date: "34/45/65",
             transid: 4,
-            value:54464,
+            value: 54464,
             type: "abc",
             name: "value",
             return: "return",
@@ -64,7 +68,28 @@ export default function Table() {
 
 
     return (
-        <div>
+        <div className='w-full h-auto'>
+
+            <div className="flex my-2 py-4 justify-between">
+                <h3 className='font-poppins mt-3 '>Agent Management Transaction</h3>
+
+
+                <p className='font-poppins py-3 text-sm'>Account || Shushil Paudel</p>
+
+            </div>
+
+
+            <div className="flex gap-[10px] my-[10px]">
+
+                <h1 className='font-poppins my-2 py-2 w-full text-lg'>Transaction</h1>
+
+                <input onChange={(e) => setSearch(e.target.value)} type="text" placeholder='' className='border-[2px] h-[40px]  w-[170px] px-[10px] rounded-[30px] border-customPurple font-poppins' />
+
+
+            </div>
+
+
+
             <table className='w-full text-center bg-white py-4 font-poppins text-sm  min-w-full divide-y divide-gray-200' >
                 <tr className='' style={costumeStyle}>
                     <th >Date </th>
@@ -78,9 +103,13 @@ export default function Table() {
 
                 </tr>
 
-                {users.map((user) => (
+                {users.filter((user) => {
+                    return search.toLowerCase() ==='' ?
+                    user :
+                    user.name.toLowerCase().includes(search);
+                }).map((user) => (
 
-                    <tr key={user.transid} style={costumeStyle} className='text-[14px] color-red text'>
+                    <tr key={user.id} style={costumeStyle} className='text-[14px] color-red text'>
 
                         <td>{user.date}</td>
                         <td>{user.transid}</td>
